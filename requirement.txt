@@ -1,0 +1,6 @@
+flask
+newspaper3k
+gunicorn
+networkx
+scipy
+-e git+https://github.com/ptmono/textrank.git#egg=textrank
