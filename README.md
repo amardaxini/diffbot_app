@@ -1,15 +1,18 @@
 
-virtualenv -p python3 diffbotapp
-. ./diffbotapp/bin/activate
-#https://github.com/codelucas/newspaper
-#https://github.com/summanlp/textrank
-#https://github.com/miso-belica/sumy
+- https://github.com/codelucas/newspaper
+- https://github.com/summanlp/textrank
+- https://github.com/miso-belica/sumy
 
-pip3 install newspaper3k
-pip install https://github.com/ptmono/textrank/archive/master.zip
-pip3 install networkx
-pip3 install scipy
-pip3 install Flask
+# installation
+  virtualenv -p python3 diffbotapp
+  . ./diffbotapp/bin/activate
+  pip3 intall -r requirement.txt
+  pip3 install newspaper3k
+  pip install https://github.com/ptmono/textrank/archive/master.zip
+  pip3 install networkx
+  pip3 install scipy
+  pip3 install Flask
+  python app.py
 
 - After fetching tags from then use this api for validate
 

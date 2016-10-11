@@ -10,12 +10,15 @@ def extract(url):
 
     return dict(
         title=article.title,
-        description=article.text,
-        html_content=article.html,
         image=article.top_image,
         authors=article.authors,
         tags=article.keywords,
+        text_rank_summary=summarizer.summarize(article.text),
+        summary=article.summary,
+        description=article.text,
+        html_content=article.html,
+        
         publish_date=article.publish_date,
-        summary=summarizer.summarize(article.text),
+        
 
     )
