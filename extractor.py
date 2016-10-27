@@ -17,7 +17,6 @@ def extract(url):
         summary=article.summary,
         description=article.text,
         html_content=article.html,
-        
         publish_date=article.publish_date,
         
 
