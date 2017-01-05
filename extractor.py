@@ -16,8 +16,11 @@ def extract(url):
         text_rank_summary=summarizer.summarize(article.text),
         summary=article.summary,
         description=article.text,
-        html_content=article.html,
         publish_date=article.publish_date,
+        meta_img=article.meta_img,
+        meta_description=article.meta_description,
+        meta_keywords=article.meta_keywords,
+
         
 
     )
