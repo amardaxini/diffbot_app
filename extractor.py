@@ -8,12 +8,17 @@ def extract(url):
     article.parse()
     article.nlp()
 
+    try:
+        text_rank_summary = summarizer.summarize(article.text)
+    except:
+        text_rank_summary = ''
+
     return dict(
         title=article.title,
         image=article.top_image,
         authors=article.authors,
         tags=article.keywords,
-        text_rank_summary=summarizer.summarize(article.text),
+        text_rank_summary=text_rank_summary,
         summary=article.summary,
         description=article.text,
         publish_date=article.publish_date,
